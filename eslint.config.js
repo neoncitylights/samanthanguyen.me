@@ -8,6 +8,12 @@ export default ts.config(
 	...ts.configs.recommended,
 	...svelte.configs["flat/recommended"],
 	{
+		rules: {
+			"no-explicit-any": "off",
+			'@typescript-eslint/no-explicit-any': 'off',
+		}
+	},
+	{
 		languageOptions: {
 			globals: {
 				...globals.browser,

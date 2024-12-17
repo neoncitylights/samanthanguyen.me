@@ -15,5 +15,11 @@
 	"mx-8 max-w-lg",
 	"lg:mx-auto lg:max-w-xl",
 )}>
+	<section class={twJoin(
+		"flex flex-col gap-6 lg:gap-8",
+		"selection:bg-pink-200 selection:text-pink-700",
+		"dark:selection:bg-yellow-400 selection:text-zinc-950"
+	)}>
 	{@render children()}
+	</section>
 </div>
