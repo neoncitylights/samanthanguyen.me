@@ -1,33 +1,40 @@
 <script>
 	import { IconBrandBluesky, IconBrandGithub } from '@tabler/icons-svelte'
-	import { twMerge } from 'tailwind-merge'
+	import { twJoin, twMerge } from 'tailwind-merge'
 </script>
 <section class="flex flex-col gap-8">
 	<header class="flex flex-col gap-2">
 		<h1 class={twMerge(
 			"pt-12 flex items-end",
-		 	"text-2xl lg:text-4xl font-domine",
+		 	"text-2xl lg:text-4xl font-domine font-bold lg:font-medium",
 		)}>
 			samanthanguyen.me
 		</h1>
-		<span class="font-domine">she/her. artist, software engineer, aspiring computer scientist</span>
+		<span class={twJoin(
+			"text-sm lg:text-base",
+			"font-domine",
+		)}>
+			she / her. artist, software engineer, aspiring computer scientist
+		</span>
 	</header>
-	<main class="flex flex-col gap-4">
-		<p class="font-domine">
-			I've most recently worked as a Research Assistant
-			at the Security & Privacy Research Lab
-			of UT Arlington, from May 2024 to December 2024.
-			My main interests mainly revolve in low-level programming,
-			including compiler design, programming languages, operating
-			systems, and graphics programming.
-		</p>
-		<p class="font-domine">
-			Besides programming, I've enjoyed fine arts since I was a child,
-			and hope to one day work in a field where I can combine both,
-			such as a developer for a video game and/or video game engine.
-			{`:-)`}
-		</p>
-		<blockquote class="italic font-sans text-sm mt-8">
+	<main class="flex flex-col gap-0 lg:gap-4">
+		<span class="flex flex-col gap-8 font-domine text-sm lg:text-base font-medium text-balance">
+			<p>
+				I've most recently worked as a Research Assistant
+				at the Security & Privacy Research Lab
+				of UT Arlington, from May 2024 to December 2024.
+				My main interests mainly revolve in low-level programming,
+				including compiler design, programming languages, operating
+				systems, and graphics programming.
+			</p>
+			<p>
+				Besides programming, I've enjoyed fine arts since I was a child,
+				and hope to one day work in a field where I can combine both,
+				such as a developer for a video game and/or video game engine.
+				{`:-)`}
+			</p>
+		</span>
+		<blockquote class="flex flex-col gap-2 italic font-sans text-sm mt-8">
 			<p>
 				"We adventure together, explore together, and capture wonderful memories together.
 				In the journeys to come, we will "trailblaze" more beautiful moments, preserving
@@ -36,7 +43,10 @@
 			<cite class="text-right">—Honkai Star Rail</cite>
 		</blockquote>
 	</main>
-	<footer class="border-t-2 border-zinc-300 pt-4 flex flex-row gap-4 justify-end">
+	<footer class={twJoin(
+		"pt-4 flex flex-row gap-4 justify-end",
+		"border-t-2 border-zinc-300",
+	)}>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
 			<IconBrandBluesky size={32} stroke={1} class="text-zinc-950" />
 		</a>
