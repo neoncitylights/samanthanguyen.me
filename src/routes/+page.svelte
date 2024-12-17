@@ -2,7 +2,8 @@
 	import { IconBrandBluesky, IconBrandGithub } from '@tabler/icons-svelte'
 	import { twJoin, twMerge } from 'tailwind-merge'
 </script>
-<section class="flex flex-col gap-8">
+
+<section class="flex flex-col gap-8 selection:bg-pink-200 selection:text-pink-800">
 	<header class="flex flex-col gap-2">
 		<h1 class={twMerge(
 			"pt-12 flex items-end",
@@ -17,8 +18,8 @@
 			she / her. artist, software engineer, aspiring computer scientist
 		</span>
 	</header>
-	<main class="flex flex-col gap-0 lg:gap-4">
-		<span class="flex flex-col gap-8 font-domine text-sm lg:text-base font-medium text-balance">
+	<main class="flex flex-col gap-8 lg:gap-12">
+		<span class="flex flex-col gap-6 lg:gap-8 font-domine text-sm lg:text-base text-left lg:text-balance">
 			<p>
 				I've most recently worked as a Research Assistant
 				at the Security & Privacy Research Lab
@@ -34,7 +35,7 @@
 				{`:-)`}
 			</p>
 		</span>
-		<blockquote class="flex flex-col gap-2 italic font-sans text-sm mt-8">
+		<blockquote class="flex flex-col gap-2 italic font-sans text-sm">
 			<p>
 				"We adventure together, explore together, and capture wonderful memories together.
 				In the journeys to come, we will "trailblaze" more beautiful moments, preserving
@@ -45,13 +46,13 @@
 	</main>
 	<footer class={twJoin(
 		"pt-4 flex flex-row gap-4 justify-end",
-		"border-t-2 border-zinc-300",
+		"border-0 lg:border-t border-zinc-400",
 	)}>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
-			<IconBrandBluesky size={32} stroke={1} class="text-zinc-950" />
+			<IconBrandBluesky size={32} stroke={1} class="text-zinc-950 hover:fill-zinc-950" />
 		</a>
 		<a href="https://github.com/neoncitylights" title="@neoncitylights on GitHub">
-			<IconBrandGithub size={32} stroke={1} class="text-zinc-950" />
+			<IconBrandGithub size={32} stroke={1} class="text-zinc-950 hover:fill-zinc-950" />
 		</a>
 	</footer>
 </section>
