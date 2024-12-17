@@ -3,7 +3,11 @@
 	import { twJoin, twMerge } from 'tailwind-merge'
 </script>
 
-<section class="flex flex-col gap-6 lg:gap-8 selection:bg-pink-200 selection:text-pink-800">
+<section class={twJoin(
+	"flex flex-col gap-6 lg:gap-8",
+	"selection:bg-pink-200 selection:text-pink-800",
+	"dark:selection:bg-yellow-400 selection:text-zinc-950"
+)}>
 	<header class="flex flex-col gap-2">
 		<h1 class={twMerge(
 			"pt-12 flex items-end",
@@ -12,7 +16,7 @@
 			samanthanguyen.me
 		</h1>
 		<span class={twJoin(
-			"text-sm lg:text-base",
+			"text-sm lg:text-base dark:text-zinc-500",
 			"font-domine",
 		)}>
 			she / her. artist, software engineer, aspiring computer scientist
@@ -46,13 +50,19 @@
 	</main>
 	<footer class={twJoin(
 		"mt-[-1rem] lg:mt-0 pt-4 flex flex-row gap-4 justify-end",
-		"border-0 lg:border-t border-zinc-300",
+		"border-0 lg:border-t border-zinc-300 dark:border-zinc-800",
 	)}>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
-			<IconBrandBluesky size={32} stroke={1} class="text-zinc-950 hover:fill-zinc-950" />
+			<IconBrandBluesky
+				size={32}
+				stroke={1}
+				class={twJoin("text-zinc-950 hover:fill-zinc-950", "dark:text-gray-50 hover:fill-gray-50")} />
 		</a>
 		<a href="https://github.com/neoncitylights" title="@neoncitylights on GitHub">
-			<IconBrandGithub size={32} stroke={1} class="text-zinc-950 hover:fill-zinc-950" />
+			<IconBrandGithub
+				size={32}
+				stroke={1}
+				class={twJoin("text-zinc-950 hover:fill-zinc-950", "dark:text-gray-50 hover:fill-gray-50")} />
 		</a>
 	</footer>
 </section>
