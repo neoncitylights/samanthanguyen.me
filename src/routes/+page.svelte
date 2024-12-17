@@ -3,7 +3,7 @@
 	import { twJoin, twMerge } from 'tailwind-merge'
 </script>
 
-<section class="flex flex-col gap-8 selection:bg-pink-200 selection:text-pink-800">
+<section class="flex flex-col gap-6 lg:gap-8 selection:bg-pink-200 selection:text-pink-800">
 	<header class="flex flex-col gap-2">
 		<h1 class={twMerge(
 			"pt-12 flex items-end",
@@ -45,8 +45,8 @@
 		</blockquote>
 	</main>
 	<footer class={twJoin(
-		"pt-4 flex flex-row gap-4 justify-end",
-		"border-0 lg:border-t border-zinc-400",
+		"mt-[-1rem] lg:mt-0 pt-4 flex flex-row gap-4 justify-end",
+		"border-0 lg:border-t border-zinc-300",
 	)}>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
 			<IconBrandBluesky size={32} stroke={1} class="text-zinc-950 hover:fill-zinc-950" />
