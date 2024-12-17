@@ -50,7 +50,7 @@
 	</main>
 	<footer class={twJoin(
 		"mt-[-1rem] lg:mt-0 pt-4 flex flex-row gap-4 justify-end",
-		"border-0 lg:border-t border-zinc-300 dark:border-zinc-800",
+		"border-0 lg:border-t border-[#CFB4C5] dark:border-zinc-800",
 	)}>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
 			<IconBrandBluesky
