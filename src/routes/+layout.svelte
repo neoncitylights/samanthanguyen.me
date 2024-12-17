@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>samanthanguyen.me</title>
+	<meta name="description" content="Samantha Nguyen. An artist, software engineer, and aspiring computer scientist" />
 </svelte:head>
 
 <div class={twJoin(
