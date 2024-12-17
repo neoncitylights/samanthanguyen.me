@@ -5,8 +5,8 @@
 <section class="flex flex-col gap-8">
 	<header class="flex flex-col gap-2">
 		<h1 class={twMerge(
-			"h-[200px] flex items-end",
-		 	"text-4xl font-domine",
+			"pt-12 flex items-end",
+		 	"text-2xl lg:text-4xl font-domine",
 		)}>
 			samanthanguyen.me
 		</h1>
