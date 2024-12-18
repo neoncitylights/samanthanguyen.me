@@ -3,9 +3,9 @@
 	import { twJoin } from 'tailwind-merge'
 </script>
 
+<div class="h-0 lg:h-[1px] bg-separator dark:bg-darkSeparator"></div>
 <footer class={twJoin(
-	"mt-[-1rem] lg:mt-0 pt-4 flex flex-row justify-end",
-	"border-0 lg:border-t border-[#CFB4C5] dark:border-zinc-800",
+	"mt-[-1rem] lg:mt-0 flex flex-row justify-end",
 )}>
 	<span class="flex flex-row gap-4">
 		<a href="mailto:contact@samanthanguyen.me" title="Email me at contact@samanthanguyen.me">
