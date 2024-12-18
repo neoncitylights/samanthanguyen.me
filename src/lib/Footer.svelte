@@ -3,7 +3,7 @@
 	import { twJoin } from 'tailwind-merge'
 </script>
 
-<div class="h-0 lg:h-[1px] bg-separator dark:bg-darkSeparator"></div>
+<div class="h-0 lg:h-[1px] bg-separator-light dark:bg-separator-dark"></div>
 <footer class={twJoin(
 	"mt-[-1rem] lg:mt-0 flex flex-row justify-end",
 )}>
