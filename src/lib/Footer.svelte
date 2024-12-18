@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { IconBrandBluesky, IconBrandGithub, IconMailFilled } from '@tabler/icons-svelte'
+	import { IconBrandBluesky, IconBrandGithubFilled, IconMailFilled } from '@tabler/icons-svelte'
 	import { twJoin } from 'tailwind-merge'
 </script>
 
@@ -12,19 +12,19 @@
 			<IconMailFilled
 				size={32}
 				stroke={1}
-				class={twJoin("fill-zinc-950 dark:fill-gray-50")} />
+				class={twJoin("fill-[#CFB4C5] dark:fill-gray-50")} />
 		</a>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
 			<IconBrandBluesky
 				size={32}
 				stroke={1}
-				class={twJoin("fill-zinc-950", "dark:fill-gray-50")} />
+				class={twJoin("text-[#CFB4C5] fill-[#CFB4C5]", "dark:text-gray-50 dark:fill-gray-50")} />
 		</a>
 		<a href="https://github.com/neoncitylights" title="@neoncitylights on GitHub">
-			<IconBrandGithub
+			<IconBrandGithubFilled
 				size={32}
 				stroke={1}
-				class={twJoin("fill-zinc-950", "dark:fill-gray-50")} />
+				class={twJoin("fill-[#CFB4C5]", "dark:fill-gray-50")} />
 		</a>
 	</span>
 </footer>
