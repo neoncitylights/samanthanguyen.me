@@ -12,19 +12,19 @@
 			<IconMailFilled
 				size={32}
 				stroke={1}
-				class={twJoin("fill-[#CFB4C5] dark:fill-gray-50")} />
+				class={twJoin("fill-[#CFB4C5] dark:fill-neutral-300")} />
 		</a>
 		<a href="https://bsky.app/profile/samanthanguyen.me" title="@samanthanguyen.me on Bluesky">
 			<IconBrandBluesky
 				size={32}
 				stroke={1}
-				class={twJoin("text-[#CFB4C5] fill-[#CFB4C5]", "dark:text-gray-50 dark:fill-gray-50")} />
+				class={twJoin("text-[#CFB4C5] fill-[#CFB4C5]", "dark:text-neutral-300 dark:fill-neutral-300")} />
 		</a>
 		<a href="https://github.com/neoncitylights" title="@neoncitylights on GitHub">
 			<IconBrandGithubFilled
 				size={32}
 				stroke={1}
-				class={twJoin("fill-[#CFB4C5]", "dark:fill-gray-50")} />
+				class={twJoin("fill-[#CFB4C5]", "dark:fill-neutral-300")} />
 		</a>
 	</span>
 </footer>
