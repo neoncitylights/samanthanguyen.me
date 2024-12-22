@@ -1,5 +1,4 @@
 Contact: mailto:contact@samanthanguyen.me
 Expires: 2025-12-12T18:00:00.000Z
-Encryption: https://signal.me/#eu/k0F49YIRzLV3XuvxJEMV2qKn--E4kjrj8lZT-shNGyKsG_MgP1xDWb_GES0JZ1hq
 Preferred-Languages: en
 Canonical: https://samanthanguyen.me/.well-known/security.txt
