@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -11,8 +11,8 @@ export default {
 			backgroundImage: {
 				'separator-light': 'linear-gradient(to right, transparent, #CFB4C5 50%, transparent)',
 				'separator-dark': 'linear-gradient(to right, transparent, rgb(39 39 42), transparent)',
-			}
-		}
+			},
+		},
 	},
-	plugins: []
-} satisfies Config;
+	plugins: [],
+} satisfies Config

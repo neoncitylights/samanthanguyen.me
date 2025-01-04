@@ -2,7 +2,7 @@
 	import "../app.css";
 	import "@fontsource-variable/public-sans";
 	import '@fontsource-variable/domine'; // Supports weights 400-700
-    import { twJoin } from "tailwind-merge";
+	import { twJoin } from "tailwind-merge";
 	let { children } = $props();
 </script>
 
@@ -14,12 +14,9 @@
 <div class={twJoin(
 	"mx-8 max-w-lg",
 	"lg:mx-auto lg:max-w-xl",
+	"flex flex-col gap-6 lg:gap-8",
+	"selection:bg-pink-200 selection:text-pink-700",
+	"dark:selection:bg-white dark:selection:text-zinc-950"
 )}>
-	<section class={twJoin(
-		"flex flex-col gap-6 lg:gap-8",
-		"selection:bg-pink-200 selection:text-pink-700",
-		"dark:selection:bg-white dark:selection:text-zinc-950"
-	)}>
 	{@render children()}
-	</section>
 </div>

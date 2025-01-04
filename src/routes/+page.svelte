@@ -1,11 +1,16 @@
 <script>
-	import Footer from '$lib/Footer.svelte'
-    import Header from '$lib/Header.svelte'
+	import Footer from '$lib/layout/Footer.svelte'
+	import Header from '$lib/layout/Header.svelte'
+	import Quote from '$lib/Quote.svelte'
+    import { twJoin } from 'tailwind-merge'
 </script>
 
 <Header />
 <main class="flex flex-col gap-8 lg:gap-12">
-	<span class="flex flex-col gap-6 lg:gap-8 font-domine text-sm lg:text-base text-left lg:text-balance">
+	<span class={twJoin(
+		"flex flex-col gap-6 lg:gap-8",
+		"font-domine text-sm lg:text-base text-left lg:text-balance"
+	)}>
 		<p>
 			I've most recently worked as a Research Assistant
 			at the Security & Privacy Research Lab
@@ -18,16 +23,13 @@
 			Besides programming, I've enjoyed fine arts since I was a child,
 			and hope to one day work in a field where I can combine both,
 			such as a developer for a video game and/or video game engine.
-			{`:-)`}
+			Here's to the future. {`:-)`}
 		</p>
 	</span>
-	<blockquote class="flex flex-col gap-2 italic font-sans text-sm">
-		<p>
-			"We adventure together, explore together, and capture wonderful memories together.
-			In the journeys to come, we will "trailblaze" more beautiful moments, preserving
-			them with our camera, our eyes, and our hearts."
-		</p>
-		<cite class="text-right">—Honkai Star Rail</cite>
-	</blockquote>
+	<Quote author="Honkai Star Rail">
+		We adventure together, explore together, and capture wonderful memories together.
+		In the journeys to come, we will "trailblaze" more beautiful moments, preserving
+		them with our camera, our eyes, and our hearts.
+	</Quote>
 </main>
 <Footer />

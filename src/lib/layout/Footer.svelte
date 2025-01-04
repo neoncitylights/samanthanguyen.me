@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { IconBrandBluesky, IconBrandGithubFilled, IconMailFilled } from '@tabler/icons-svelte'
 	import { twJoin } from 'tailwind-merge'
-    import ExternalLink from './ExternalLink.svelte'
+    import ExternalLink from '$lib/ExternalLink.svelte'
 </script>
 
 <div class="h-0 lg:h-[1px] bg-separator-light dark:bg-separator-dark"></div>
