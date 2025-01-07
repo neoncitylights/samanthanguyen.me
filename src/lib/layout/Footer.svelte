@@ -38,7 +38,9 @@
 						'flex flex-row items-center gap-1 lg:gap-2',
 						'text-xs lg:text-sm font-mono',
 						'hover:bg-zinc-900 hover:text-zinc-100',
-						'dark:hover:bg-zinc-100 dark:hover:text-zinc-900',
+						'dark:hover:bg-zinc-100 dark:hover:text-zinc-900'
+						// 'hover:bg-blue-600 hover:text-zinc-100',
+						// 'dark:hover:bg-zinc-100 dark:hover:text-zinc-900',
 					]}
 				>
 					{`${link.text} \u{2197}`}
@@ -46,12 +48,15 @@
 				<span
 					class={[
 						'socials-target hidden absolute p-2 mt-1',
-						'bg-blue-600',
-						'text-xs text-white',
+						'bg-white border-2 border-black',
+						'dark:bg-zinc-900 dark:border-zinc-100',
+						'text-xs',
+						'text-zinc-900 dark:text-zinc-100',
+						'transition-all'
 					]}
 					id={`socials-target-${link.text.toLowerCase()}`}
 				>
-					{link.title}
+					{`\u{00ab} ${link.title} \u{00bb}`}
 				</span>
 			</span>
 		{/each}
@@ -60,9 +65,14 @@
 
 <style>
 	.socials-target {
-		position-area: bottom;
+		position-area: span-bottom start;
 		position-visibility: no-overflow;
-		box-shadow: 5px 5px #1e3a8a;
+		box-shadow: 4px 4px #000;
+	}
+	@media (prefers-color-scheme: dark) {
+		.socials-target {
+			box-shadow: 4px 4px #fff;
+		}
 	}
 
 	:global(#socials-anchor-email)   { anchor-name:       --email-anchor; }
