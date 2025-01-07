@@ -5,5 +5,5 @@
 	<p>
 		{'"'}{@render children()}{'"'}
 	</p>
-	<cite class="text-right">—{author}</cite>
+	<cite class="text-right">— {author}</cite>
 </blockquote>
