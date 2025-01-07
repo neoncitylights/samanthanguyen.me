@@ -1,7 +1,5 @@
 <script lang="ts">
 	import '../app.css'
-	import '@fontsource-variable/public-sans'
-	import '@fontsource-variable/domine'
 	// import CommandPalette from '$lib/palette/CommandPalette.svelte'
 	let { children } = $props()
 	// let dialogOpen = $state(false)
