@@ -4,7 +4,9 @@
 	import Quote from '$lib/Quote.svelte'
 </script>
 
-<Header />
+<Header
+	heading={'samanthanguyen.me'}
+	subheading={'she / her. artist, software engineer, aspiring computer scientist'} />
 <main class="flex flex-col gap-8 lg:gap-12 font-mono">
 	<span class={[
 		'flex flex-col gap-6 lg:gap-8',
