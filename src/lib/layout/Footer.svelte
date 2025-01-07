@@ -81,7 +81,9 @@
 	:global(#socials-target-bluesky) { position-anchor: --bluesky-anchor; }
 	:global(#socials-anchor-github)  { anchor-name:      --github-anchor; }
 	:global(#socials-target-github)  { position-anchor:  --github-anchor; }
-	:global(.socials-anchor:hover ~ .socials-target) {
-		display: block;
+	@media (hover: hover) {
+		:global(.socials-anchor:hover ~ .socials-target) {
+			display: block;
+		}
 	}
 </style>
