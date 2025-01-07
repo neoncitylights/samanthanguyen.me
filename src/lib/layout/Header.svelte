@@ -1,7 +1,7 @@
 <header class="pt-12">
 	<hgroup class="flex flex-col gap-1">
 		<h1 class={[
-			'text-[1.625rem] lg:text-4xl',
+			'text-2xl lg:text-4xl',
 			'font-mono font-bold lg:font-medium',
 		]}>
 			samanthanguyen.me
