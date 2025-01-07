@@ -1,22 +1,43 @@
 <script lang="ts">
-	import "../app.css";
-	import "@fontsource-variable/public-sans";
-	import '@fontsource-variable/domine'; // Supports weights 400-700
-	import { twJoin } from "tailwind-merge";
-	let { children } = $props();
+	import '../app.css'
+	import '@fontsource-variable/public-sans'
+	import '@fontsource-variable/domine'
+	// import CommandPalette from '$lib/palette/CommandPalette.svelte'
+	let { children } = $props()
+	// let dialogOpen = $state(false)
+	// const onKeyDown = (e: KeyboardEvent) => {
+	// 	if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
+	// 		e.preventDefault()
+	// 		dialogOpen = true
+	// 	}
+	// }
 </script>
 
 <svelte:head>
 	<title>samanthanguyen.me</title>
-	<meta name="description" content="Samantha Nguyen. An artist, software engineer, and aspiring computer scientist" />
+	<meta
+		name="description"
+		content="Samantha Nguyen. An artist, software engineer, and aspiring computer scientist"
+	/>
 </svelte:head>
+<!-- <svelte:document onkeydown={onKeyDown} />
+<CommandPalette bind:open={dialogOpen} /> -->
 
-<div class={twJoin(
-	"mx-8 max-w-lg",
-	"lg:mx-auto lg:max-w-xl",
-	"flex flex-col gap-6 lg:gap-8",
-	"selection:bg-pink-200 selection:text-pink-700",
-	"dark:selection:bg-white dark:selection:text-zinc-950"
-)}>
+<div
+	class={[
+		'mx-8 max-w-lg',
+		'lg:mx-auto lg:max-w-xl',
+		'flex flex-col gap-6 lg:gap-8',
+	]}
+>
 	{@render children()}
 </div>
+
+<style>
+	@font-face {
+		font-family: 'Departure Mono';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Departure Mono'), url('/fonts/DepartureMono-Regular.woff2') format('woff2');
+	}
+</style>

@@ -1,19 +1,15 @@
-<script>
-	import { twJoin } from 'tailwind-merge'
-</script>
-
-<header>
-	<hgroup class="flex flex-col gap-1 lg:gap-2">
-		<h1 class={twJoin(
-			"pt-12 flex items-end",
-		 	"text-2xl lg:text-4xl font-domine font-bold lg:font-medium",
-		)}>
+<header class="pt-12">
+	<hgroup class="flex flex-col gap-1">
+		<h1 class={[
+			'text-2xl lg:text-4xl',
+			'font-mono font-bold lg:font-medium',
+		]}>
 			samanthanguyen.me
 		</h1>
-		<p class={twJoin(
-			"text-sm lg:text-base dark:text-zinc-500",
-			"font-domine",
-		)}>
+		<p class={[
+			'font-mono text-balance text-xs lg:text-base',
+			'dark:text-zinc-400',
+		]}>
 			she / her. artist, software engineer, aspiring computer scientist
 		</p>
 	</hgroup>

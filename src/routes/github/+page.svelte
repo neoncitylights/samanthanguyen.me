@@ -1,0 +1,3 @@
+<svelte:head>
+	<meta http-equiv="refresh" content="0; url=https://github.com/neoncitylights" />
+</svelte:head>

@@ -2,6 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#f6f8f6" media="(prefers-color-scheme: light)">
+		<meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
 		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
 		<link type="image/png" sizes="16x16" rel="icon" href="%sveltekit.assets%/favicon-16x16.png">
 		<link type="image/png" sizes="32x32" rel="icon" href="%sveltekit.assets%/favicon-32x32.png">
@@ -9,12 +12,10 @@
 		<link type="image/png" sizes="32x32" rel="icon" href="%sveltekit.assets%/android-chrome-512x512.png">
 		<link type="image/png" sizes="180x180" rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png">
 		<link type="image/png" sizes="180x180" rel="apple-touch-icon-precomposed" href="%sveltekit.assets%/apple-touch-icon-precomposed.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#EDE3E9" media="(prefers-color-scheme: light)">
-		<meta name="theme-color" content="#070707" media="(prefers-color-scheme: dark)">
+		<link type="font/woff2" as="font" rel="preload" href="%sveltekit.assets%/fonts/DepartureMono-Regular.woff2" crossorigin="anonymous">
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" class="bg-[#EDE3E9] dark:bg-neutral-900 text-[#110b11] dark:text-neutral-300">
+	<body data-sveltekit-preload-data="hover" class="bg-[#f6f8f6] dark:bg-zinc-900 text-[#110b11] dark:text-zinc-100">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

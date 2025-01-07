@@ -43,7 +43,7 @@ export const formatTime = (d: Date, timeStyle: 'short' | 'medium' | 'long' = 'sh
 export const formatAttribute = (
 	d: Date,
 	timeStyle: Intl.DateTimeFormatOptions['timeStyle'],
-	dateStyle: Intl.DateTimeFormatOptions['dateStyle']
+	dateStyle: Intl.DateTimeFormatOptions['dateStyle'],
 ): string => {
 	const kind = getKind(timeStyle, dateStyle)
 	switch (kind) {
