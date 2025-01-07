@@ -23,7 +23,7 @@
 <footer class={[
 	'flex flex-col lg:gap-6',
 	'pt-4 border-t-2 border-t-zinc-950 dark:border-t-zinc-300',
-	'font-mono'
+	'font-mono',
 ]}>
 	<span class={[
 		'flex flex-row gap-4 lg:gap-6 justify-end',
@@ -38,9 +38,7 @@
 						'flex flex-row items-center gap-1 lg:gap-2',
 						'text-xs lg:text-sm font-mono',
 						'hover:bg-zinc-900 hover:text-zinc-100',
-						'dark:hover:bg-zinc-100 dark:hover:text-zinc-900'
-						// 'hover:bg-blue-600 hover:text-zinc-100',
-						// 'dark:hover:bg-zinc-100 dark:hover:text-zinc-900',
+						'dark:hover:bg-zinc-100 dark:hover:text-zinc-900',
 					]}
 				>
 					{`${link.text} \u{2197}`}
@@ -52,7 +50,7 @@
 						'dark:bg-zinc-900 dark:border-zinc-100',
 						'text-xs',
 						'text-zinc-900 dark:text-zinc-100',
-						'transition-all'
+						'transition-all',
 					]}
 					id={`socials-target-${link.text.toLowerCase()}`}
 				>
