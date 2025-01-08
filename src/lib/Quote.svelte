@@ -1,7 +1,11 @@
 <script lang="ts">
-	let { children, author } = $props()
+	let { children, author, styles = '' }: {
+		children: any
+		author: string
+		styles?: string
+	} = $props()
 </script>
-<blockquote class="flex flex-col gap-2 italic text-xs lg:text-sm">
+<blockquote class={['flex flex-col gap-2 italic', styles]}>
 	<p>
 		{'"'}{@render children()}{'"'}
 	</p>

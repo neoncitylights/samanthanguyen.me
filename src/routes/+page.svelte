@@ -32,7 +32,7 @@
 			Here's to the future!
 		</p>
 	</span>
-	<Quote author="Honkai Star Rail">
+	<Quote author="Honkai Star Rail" styles="text-xs lg:text-sm">
 		We adventure together, explore together, and capture wonderful memories together.
 		In the journeys to come, we will "trailblaze" more beautiful moments, preserving
 		them with our camera, our eyes, and our hearts.

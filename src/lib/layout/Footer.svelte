@@ -21,10 +21,10 @@
 </script>
 
 <footer class={[
-	'flex flex-col lg:gap-6',
-	'pt-4 border-t-2 border-t-zinc-950 dark:border-t-zinc-300',
+	'flex flex-col gap-4 lg:gap-6',
 	'font-mono',
 ]}>
+	<span class="h-[15px] text-zinc-900 bg-pattern-dots-sm bg-[length:5px_5px]"></span>
 	<span class={[
 		'flex flex-row gap-4 lg:gap-6 justify-end',
 	]}>
