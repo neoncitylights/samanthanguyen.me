@@ -20,14 +20,18 @@
 	]
 </script>
 
-<footer class={[
-	'flex flex-col gap-4 lg:gap-6',
-	'font-mono',
-]}>
+{#snippet separator()}
 	<hr class={[
 		'border-0 h-[15px] bg-pattern-dots-sm bg-[length:5px_5px]',
 		'text-zinc-900 dark:text-zinc-100',
 	]} />
+{/snippet}
+
+<footer class={[
+	'flex flex-col gap-4 lg:gap-6',
+	'font-mono',
+]}>
+	{@render separator()}
 	<span class={[
 		'flex flex-row gap-4 lg:gap-6 justify-end',
 	]}>
