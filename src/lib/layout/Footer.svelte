@@ -24,7 +24,10 @@
 	'flex flex-col gap-4 lg:gap-6',
 	'font-mono',
 ]}>
-	<span class="h-[15px] text-zinc-900 bg-pattern-dots-sm bg-[length:5px_5px]"></span>
+	<hr class={[
+		'border-0 h-[15px] bg-pattern-dots-sm bg-[length:5px_5px]',
+		'text-zinc-900 dark:text-zinc-100',
+	]} />
 	<span class={[
 		'flex flex-row gap-4 lg:gap-6 justify-end',
 	]}>
