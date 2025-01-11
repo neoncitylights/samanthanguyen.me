@@ -7,7 +7,7 @@ const csp: Record<string, string[]> = {
 	'frame-ancestors': ['\'none\''],
 	'default-src': ['\'self\''],
 	'connect-src': ['\'self\'', 'cloudflareinsights.com'],
-	'script-src': ['\'self\'', 'static.cloudflareinsights'],
+	'script-src': ['\'self\'', 'static.cloudflareinsights.com'],
 	'style-src': ['\'self\''],
 }
 if (dev) {
