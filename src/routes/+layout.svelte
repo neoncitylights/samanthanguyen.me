@@ -1,26 +1,12 @@
 <script lang="ts">
 	import '../app.css'
-	// import CommandPalette from '$lib/palette/CommandPalette.svelte'
 	let { children } = $props()
-	// let dialogOpen = $state(false)
-	// const onKeyDown = (e: KeyboardEvent) => {
-	// 	if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
-	// 		e.preventDefault()
-	// 		dialogOpen = true
-	// 	}
-	// }
 </script>
 
 <svelte:head>
 	<title>samanthanguyen.me</title>
-	<meta
-		name="description"
-		content="Samantha Nguyen. An artist, software engineer, and aspiring computer scientist"
-	/>
+	<meta name="description" content="Samantha Nguyen. An artist, software engineer, and aspiring computer scientist" />
 </svelte:head>
-<!-- <svelte:document onkeydown={onKeyDown} />
-<CommandPalette bind:open={dialogOpen} /> -->
-
 <div
 	class={[
 		'mx-8 max-w-lg',
