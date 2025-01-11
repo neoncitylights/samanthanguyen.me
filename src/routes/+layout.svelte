@@ -23,5 +23,6 @@
 		font-style: normal;
 		font-weight: 400;
 		src: local('Departure Mono'), url('/fonts/DepartureMono-Regular.woff2') format('woff2');
+		font-display: swap;
 	}
 </style>
