@@ -1,6 +1,5 @@
 <script>
 	import { Command, Dialog } from 'bits-ui'
-	import { twJoin } from 'tailwind-merge'
 	import CommandItem from './CommandItem.svelte'
 	import CommandGroupHeading from './CommandGroupHeading.svelte'
 	let { open = $bindable() } = $props()
@@ -8,15 +7,15 @@
 
 <Dialog.Root bind:open={open}>
 	<Dialog.Portal>
-		<Dialog.Overlay class={twJoin(
+		<Dialog.Overlay class={[
 			'fixed inset-0 z-50',
 			'data-[state=open]:animate-in',
 			'data-[state=closed]:animate-out',
 			'data-[state=closed]:fade-out-0',
 			'data-[state=open]:fade-in-0',
-		)} />
+		]} />
 	</Dialog.Portal>
-	<Dialog.Content class={twJoin(
+	<Dialog.Content class={[
 		'fixed left-[50%] top-[50%] z-50 w-full',
 		'max-w-[94%] translate-x-[-50%] translate-y-[-50%]',
 		'rounded-card-lg bg-background shadow-popover outline-none',
@@ -31,20 +30,20 @@
 		'data-[state=open]:slide-in-from-left-1/2',
 		'data-[state=open]:slide-in-from-top-[48%]',
 		'sm:max-w-[490px] md:w-full',
-	)}>
-		<Command.Root class={twJoin(
+	]}>
+		<Command.Root class={[
 			'flex h-full w-full flex-col self-start',
 			'divide-y divide-border overflow-hidden',
 			'rounded-xl border border-muted bg-slate-100',
-		)}>
+		]}>
 			<Command.Input
-				class={twJoin(
+				class={[
 					'inline-flex h-input w-[296px] p-4',
 					'truncate text-sm',
 					'bg-background transition-colors placeholder:text-foreground-alt/50',
 					'focus-override focus:outline-none focus:ring-0',
 					'appearance-none bg-[unset]',
-				)}
+				]}
 				placeholder="Search for something..."
 			/>
 			<Command.List class="max-h-[280px] overflow-y-auto overflow-x-hidden px-2 pb-2">
