@@ -22,7 +22,9 @@
 
 {#snippet separator()}
 	<hr class={[
-		'border-0 h-[15px] bg-pattern-dots-sm bg-[length:5px_5px]',
+		'border-0 h-[15px]',
+		'bg-[length:5px_5px] bg-radial-[0.5px_0.5px]',
+		'from-current to-transparent',
 		'text-zinc-900 dark:text-zinc-100',
 	]} />
 {/snippet}
