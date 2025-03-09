@@ -1,4 +1,4 @@
-import { mdsvex } from 'npm:mdsvex'
+import { mdsvex } from 'mdsvex'
 import adapter from '@sveltejs/adapter-cloudflare'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
